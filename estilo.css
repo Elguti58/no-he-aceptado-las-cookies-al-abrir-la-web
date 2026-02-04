@@ -1,0 +1,66 @@
+:root {
+    --color-principal: rgb(11, 36, 182);
+    --color-secundario: rgb(0, 255, 200);
+    --color-fondo: lightblue;
+
+--espaciado: 20px;
+--radio-borde: 50px;
+--duracion-transicion: 0.3s;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: var(--color-fondo);
+    border: aquamarine;
+}
+header {
+    background-color: var(--color-principal);
+    color: white;
+    padding: var(--espaciado);
+    text-align: var(--espaciado);
+    text-align: center;
+}
+aside {
+    background: #2e659c;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: var(--espaciado);
+    margin: var(--espaciado);
+}
+.tarjetas {
+    background-color: white;
+    padding: var(--espaciado);
+    border-radius: var(--radio-borde);
+    width: 200px;
+    text-align: center;
+}
+
+button {
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: var(--radio-borde);
+    cursor: pointer;
+    transition: background-color var(--duracion-transicion);
+}
+button:hover {
+    background-color: var(--color-principal);
+}
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+@media (max-widht: 900px)
+{
+    head, body, header, aside, nav, main, footer
+}
